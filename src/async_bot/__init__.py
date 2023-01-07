@@ -10,7 +10,7 @@ from async_bot.config import load_messages, load_buttons, load_config, Config
 from async_bot.states import load_state_storage
 from async_bot.filters import add_custom_filters
 from async_bot.handlers import register_handlers
-from async_bot.keyboards import create_keyboards, Keyboards
+from async_bot.keyboards import create_keyboards
 from async_bot.middlewares import setup_middlewares
 
 

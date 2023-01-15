@@ -2,7 +2,7 @@ from typing import Callable
 
 from telebot.async_telebot import AsyncTeleBot
 from telebot.types import Message
-from telebot.apihelper import ApiException
+from telebot.asyncio_helper import ApiException
 
 from storages.async_storages import Storage
 

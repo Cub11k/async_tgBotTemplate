@@ -10,7 +10,7 @@ class BanChecker(BaseMiddleware):
 
         self.update_types = ["message", "callback_query"]
 
-    def pre_process(self, message, data):
+    async def pre_process(self, message, data):
         try:
             result = await self.storage.get_data("banned_users")
             banned_users = result[0]
@@ -21,5 +21,5 @@ class BanChecker(BaseMiddleware):
             if message.from_user.id in banned_users:
                 return CancelUpdate()
 
-    def post_process(self, message, data, exception):
+    async def post_process(self, message, data, exception):
         pass

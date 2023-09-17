@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "async_tgBotTemplate"
 version = "0.0.1"
 authors = [
-  { name="Konstantin Ostashenko", email="zxe20jg1t@mozmail.com" },
+    { name = "Konstantin Ostashenko", email = "zxe20jg1t@mozmail.com" },
 ]
 description = "Telegram Bot Template"
 readme = "README.md"
@@ -15,7 +15,8 @@ dependencies = [
     "adaptix>=3.0.0a5",
     "aiohttp>=3.8.5",
     "pytelegrambotapi>=4.13.0",
-    "redis>=5.0.0"
+    "redis>=5.0.0",
+    "toml>=0.10.2; python_version < '3.11'"
 ]
 classifiers = [
     "Programming Language :: Python :: 3",
